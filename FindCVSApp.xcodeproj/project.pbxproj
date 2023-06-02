@@ -64,7 +64,22 @@
 		DA6E6C2D2A285AE900CA5A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6E6C2C2A285AE900CA5A1F /* SceneDelegate.swift */; };
 		DA6E6C342A285AEA00CA5A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6E6C332A285AEA00CA5A1F /* Assets.xcassets */; };
 		DA6E6C372A285AEA00CA5A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6E6C352A285AEA00CA5A1F /* LaunchScreen.storyboard */; };
+		DAC82C1D2A2990A3002C68CC /* LocalNetworkStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C1C2A2990A3002C68CC /* LocalNetworkStub.swift */; };
+		DAC82C1F2A2991F8002C68CC /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C1E2A2991F8002C68CC /* Dummy.swift */; };
+		DAC82C212A299203002C68CC /* LocationInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C202A299203002C68CC /* LocationInformationModelTests.swift */; };
+		DAC82C232A29920F002C68CC /* LocationInformationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC82C222A29920F002C68CC /* LocationInformationViewModelTests.swift */; };
+		DAC82C252A29924F002C68CC /* networkDummy.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAC82C242A29924F002C68CC /* networkDummy.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAC82C172A29907F002C68CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA6E6C1F2A285AE900CA5A1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6E6C262A285AE900CA5A1F;
+			remoteInfo = FindCVSApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		905B564D2A28F94D00FBDF66 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
@@ -130,6 +145,12 @@
 		DA6E6C362A285AEA00CA5A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA6E6C382A285AEA00CA5A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC82C012A298D05002C68CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DAC82C132A29907E002C68CC /* FindCVSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCVSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC82C1C2A2990A3002C68CC /* LocalNetworkStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkStub.swift; sourceTree = "<group>"; };
+		DAC82C1E2A2991F8002C68CC /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		DAC82C202A299203002C68CC /* LocationInformationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModelTests.swift; sourceTree = "<group>"; };
+		DAC82C222A29920F002C68CC /* LocationInformationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModelTests.swift; sourceTree = "<group>"; };
+		DAC82C242A29924F002C68CC /* networkDummy.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = networkDummy.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +172,13 @@
 				DA39AA942A29758D00C8E36E /* SnapKit in Frameworks */,
 				DA39AA8F2A29757A00C8E36E /* RxSwift in Frameworks */,
 				DA39AA892A29757A00C8E36E /* RxBlocking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC82C102A29907E002C68CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6E6C292A285AE900CA5A1F /* FindCVSApp */,
+				DAC82C142A29907F002C68CC /* FindCVSAppTests */,
 				DA6E6C282A285AE900CA5A1F /* Products */,
 				DA39AA952A29790600C8E36E /* Frameworks */,
 			);
@@ -286,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6E6C272A285AE900CA5A1F /* FindCVSApp.app */,
+				DAC82C132A29907E002C68CC /* FindCVSAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +334,18 @@
 				DA6E6C382A285AEA00CA5A1F /* Info.plist */,
 			);
 			path = FindCVSApp;
+			sourceTree = "<group>";
+		};
+		DAC82C142A29907F002C68CC /* FindCVSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC82C1C2A2990A3002C68CC /* LocalNetworkStub.swift */,
+				DAC82C1E2A2991F8002C68CC /* Dummy.swift */,
+				DAC82C202A299203002C68CC /* LocationInformationModelTests.swift */,
+				DAC82C222A29920F002C68CC /* LocationInformationViewModelTests.swift */,
+				DAC82C242A29924F002C68CC /* networkDummy.strings */,
+			);
+			path = FindCVSAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +376,24 @@
 			productReference = DA6E6C272A285AE900CA5A1F /* FindCVSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DAC82C122A29907E002C68CC /* FindCVSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC82C192A29907F002C68CC /* Build configuration list for PBXNativeTarget "FindCVSAppTests" */;
+			buildPhases = (
+				DAC82C0F2A29907E002C68CC /* Sources */,
+				DAC82C102A29907E002C68CC /* Frameworks */,
+				DAC82C112A29907E002C68CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC82C182A29907F002C68CC /* PBXTargetDependency */,
+			);
+			name = FindCVSAppTests;
+			productName = FindCVSAppTests;
+			productReference = DAC82C132A29907E002C68CC /* FindCVSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -346,6 +406,11 @@
 				TargetAttributes = {
 					DA6E6C262A285AE900CA5A1F = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					DAC82C122A29907E002C68CC = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+						TestTargetID = DA6E6C262A285AE900CA5A1F;
 					};
 				};
 			};
@@ -367,6 +432,7 @@
 			projectRoot = "";
 			targets = (
 				DA6E6C262A285AE900CA5A1F /* FindCVSApp */,
+				DAC82C122A29907E002C68CC /* FindCVSAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,6 +474,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC82C112A29907E002C68CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC82C252A29924F002C68CC /* networkDummy.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,7 +506,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC82C0F2A29907E002C68CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC82C232A29920F002C68CC /* LocationInformationViewModelTests.swift in Sources */,
+				DAC82C1F2A2991F8002C68CC /* Dummy.swift in Sources */,
+				DAC82C1D2A2990A3002C68CC /* LocalNetworkStub.swift in Sources */,
+				DAC82C212A299203002C68CC /* LocationInformationModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAC82C182A29907F002C68CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6E6C262A285AE900CA5A1F /* FindCVSApp */;
+			targetProxy = DAC82C172A29907F002C68CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA6E6C352A285AEA00CA5A1F /* LaunchScreen.storyboard */ = {
@@ -636,6 +729,47 @@
 			};
 			name = Release;
 		};
+		DAC82C1A2A29907F002C68CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 839W2CPX46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FindCVSApp.FindCVSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCVSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindCVSApp";
+			};
+			name = Debug;
+		};
+		DAC82C1B2A29907F002C68CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 839W2CPX46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FindCVSApp.FindCVSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCVSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindCVSApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -653,6 +787,15 @@
 			buildConfigurations = (
 				DA6E6C3C2A285AEA00CA5A1F /* Debug */,
 				DA6E6C3D2A285AEA00CA5A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC82C192A29907F002C68CC /* Build configuration list for PBXNativeTarget "FindCVSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC82C1A2A29907F002C68CC /* Debug */,
+				DAC82C1B2A29907F002C68CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
